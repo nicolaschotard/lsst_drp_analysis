@@ -107,8 +107,8 @@ Install
 Knowledge
 ---------
 
-  - install python - a lot of way to do that, and that could be a mess
-  - install a python package
-  - ipython
-  - jupyter notebook
-  - basis knowledge on python
+- install python - a lot of way to do that, and that could be a mess
+- install a python package
+- ipython
+- jupyter notebook
+- basis knowledge on python
