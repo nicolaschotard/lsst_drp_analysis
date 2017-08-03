@@ -1,4 +1,11 @@
-A 2-days tutorial on how to analyze LSST-stack output data using python.
+LSST data release production (drp) analysis
+===========================================
+
+Purpose: A 2-days tutorial on how to analyze LSST-stack output data using python
+For: Someone who wants to use the LSSt stack output and start analyzing it with Python
+Where: CC-IN2P3, Lyon, France
+When: Octobre 3-4, 2017
+
 
 Outline
 =======
