@@ -3,7 +3,7 @@ A 2-days tutorial on how to analyze LSST-stack output data using python.
 Outline
 =======
 
-Introduction
+1 Introduction
 ------------
 
 - Short reminder about Python
@@ -11,17 +11,17 @@ Introduction
 - What tools will we be using today
 
 
-The LSST stack
+2 The LSST stack
 --------------
 
-How to install and setup the LSST stack
+2.1 How to install and setup the LSST stack
 ```````````````````````````````````````
 
 - Stable version and weeklies
 - Setup of stack-install packages
 - Install and setup of a non-stack packages
 
-Overview of the data processing
+2.2 Overview of the data processing
 ```````````````````````````````
 
 - My input data, and what `obs_*` should I be using
@@ -29,7 +29,7 @@ Overview of the data processing
 - A complete data reprocessing work-flow
 - What catalogs are produced and from which step of the pipeline
 
-Access the data
+2.3 Access the data
 ```````````````
 
 - What is a data dataIds - an example with CFHT data
@@ -38,10 +38,10 @@ Access the data
 - First step to analysis
 
 
-Python libraries for data analysis
+3 Python libraries for data analysis
 ----------------------------------
 
-Overview of useful python libraries: a non-exausthive list
+3.1 Overview of useful python libraries: a non-exausthive list
 ``````````````````````````````````````````````````````````
 
 - useful native functionalities
@@ -56,7 +56,7 @@ Overview of useful python libraries: a non-exausthive list
 - `yaml`, `json`, `(c)Pickle`
 - `healpy`
 
-In more details
+3.2 In more details
 ```````````````
 
 - `numpy`
@@ -66,10 +66,10 @@ In more details
 - `other`
 
 
-Build a python package for data analysis
+4 Build a python package for data analysis
 ----------------------------------------
 
-Short tutotial to build a python package
+4.1 Short tutotial to build a python package
 ````````````````````````````````````````
 
 - setup.py
@@ -79,7 +79,7 @@ Short tutotial to build a python package
 - install and test your code localy
  
 
-Share your work and make it useful
+4.2 Share your work and make it useful
 ``````````````````````````````````
 
 - `git` / github: basic functionnalities
@@ -88,7 +88,7 @@ Share your work and make it useful
 - static code analysis (how well my code is written): landscape
 - "dynamic" code analysis (make and run my unit/integration tests): codecov
 
-Conclusion
+5 Conclusion
 ----------
 
 TBD
