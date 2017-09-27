@@ -1,0 +1,106 @@
+root INFO: Loading config overrride file '/sps/lsst/software/lsst_distrib/w_2017_38/stack/miniconda3-4.3.21-10a4fa6/Linux64/obs_subaru/13.0-48-gb7c7029d/config/processCcd.py'
+root INFO: Loading config overrride file '/sps/lsst/software/lsst_distrib/w_2017_38/stack/miniconda3-4.3.21-10a4fa6/Linux64/obs_subaru/13.0-48-gb7c7029d/config/hsc/processCcd.py'
+CameraMapper INFO: Loading exposure registry from /sps/lsst/dev/boutigny/demo/input/registry.sqlite3
+CameraMapper INFO: Loading calib registry from /sps/lsst/dev/boutigny/demo/input/CALIB/calibRegistry.sqlite3
+CameraMapper INFO: Loading Posix calib registry from /sps/lsst/dev/boutigny/demo/output
+root INFO: Running: /sps/lsst/software/lsst_distrib/w_2017_38/stack/miniconda3-4.3.21-10a4fa6/Linux64/pipe_tasks/13.0-64-gd461ca2f+2/bin/processCcd.py input --output output --id visit=40984 ccd=55
+processCcd INFO: Processing {'visit': 40984, 'ccd': 55, 'field': 'SSP_UDEEP_SXDS', 'dateObs': '2015-10-10', 'pointing': 1378, 'filter': 'HSC-R', 'taiObs': '2015-10-10', 'expTime': 300.0}
+processCcd.isr INFO: Performing ISR on sensor {'visit': 40984, 'ccd': 55, 'field': 'SSP_UDEEP_SXDS', 'dateObs': '2015-10-10', 'pointing': 1378, 'filter': 'HSC-R', 'taiObs': '2015-10-10', 'expTime': 300.0}
+processCcd.isr.crosstalk INFO: Applying crosstalk correction
+processCcd.isr INFO: Applying brighter fatter correction
+processCcd.isr INFO: Finished brighter fatter in 8 iterations
+processCcd.isr INFO: Set 0 BAD pixels to 1870.91
+processCcd.isr INFO: Flattened sky level: 1871.117920 +/- 24.921975
+processCcd.isr INFO: Measuring sky levels in 8x16 grids: 1868.962169
+processCcd.isr INFO: Sky flatness in 8x16 grids - pp: 0.017670 rms: 0.004262
+processCcd.isr INFO: Setting rough magnitude zero point: 35.192803
+processCcd.charImage INFO: Processing {'visit': 40984, 'ccd': 55, 'field': 'SSP_UDEEP_SXDS', 'dateObs': '2015-10-10', 'pointing': 1378, 'filter': 'HSC-R', 'taiObs': '2015-10-10', 'expTime': 300.0}
+processCcd.charImage WARN: Source catalog detected and measured with placeholder or default PSF
+processCcd.charImage.repair INFO: Identified 844 cosmic rays.
+processCcd.charImage.detection INFO: Detected 421 positive sources to 50 sigma.
+processCcd.charImage.detection INFO: Resubtracting the background after object detection
+processCcd.charImage.measurement INFO: Measuring 421 sources (421 parents, 0 children) 
+processCcd.charImage.measurePsf INFO: Measuring PSF
+processCcd.charImage.measurePsf INFO: PSF star selector found 80 candidates
+processCcd.charImage.measurePsf INFO: Reserved 19 candidates from the fitting
+processCcd.charImage.measurePsf.psfDeterminer WARN: NOT scaling kernelSize by stellar quadrupole moment, but using absolute value
+processCcd.charImage.measurePsf INFO: PSF determination using 73/80 stars.
+processCcd.charImage INFO: iter 1; PSF sigma=1.30, dimensions=(41, 41); median background=1869.38
+processCcd.charImage WARN: Source catalog detected and measured with placeholder or default PSF
+processCcd.charImage.repair INFO: Identified 877 cosmic rays.
+processCcd.charImage.detection INFO: Detected 457 positive sources to 50 sigma.
+processCcd.charImage.detection INFO: Resubtracting the background after object detection
+processCcd.charImage.measurement INFO: Measuring 457 sources (457 parents, 0 children) 
+processCcd.charImage.measurePsf INFO: Measuring PSF
+processCcd.charImage.measurePsf INFO: PSF star selector found 85 candidates
+processCcd.charImage.measurePsf INFO: Reserved 21 candidates from the fitting
+processCcd.charImage.measurePsf.psfDeterminer WARN: NOT scaling kernelSize by stellar quadrupole moment, but using absolute value
+processCcd.charImage.measurePsf INFO: PSF determination using 77/85 stars.
+processCcd.charImage INFO: iter 2; PSF sigma=1.31, dimensions=(41, 41); median background=1869.41
+processCcd.charImage.repair INFO: Identified 893 cosmic rays.
+processCcd.charImage.measurement INFO: Measuring 457 sources (457 parents, 0 children) 
+processCcd.charImage.measureApCorr INFO: Measuring aperture corrections for 23 flux fields
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_2_4_5: RMS 0.051657 from 73
+processCcd.charImage.measureApCorr INFO: Aperture correction for modelfit_CModel_initial: RMS 0.041233 from 74
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_1_3_3: RMS 0.064051 from 73
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_3_kron: RMS 0.068476 from 74
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_3_4_5: RMS 0.059622 from 73
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_3_3_3: RMS 0.084767 from 71
+processCcd.charImage.measureApCorr INFO: Aperture correction for modelfit_CModel_dev: RMS 0.041760 from 74
+processCcd.charImage.measureApCorr INFO: Aperture correction for base_GaussianFlux: RMS 0.050783 from 75
+processCcd.charImage.measureApCorr INFO: Aperture correction for modelfit_CModel_exp: RMS 0.043585 from 73
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_2_6_0: RMS 0.041076 from 75
+processCcd.charImage.measureApCorr INFO: Aperture correction for base_PsfFlux: RMS 0.047457 from 73
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_1_6_0: RMS 0.038812 from 75
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_0_6_0: RMS 0.035274 from 74
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_0_kron: RMS 0.034872 from 75
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_photometryKron_KronFlux: RMS 0.035225 from 75
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_0_3_3: RMS 0.053359 from 73
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_1_4_5: RMS 0.045129 from 73
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_2_kron: RMS 0.042620 from 75
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_2_3_3: RMS 0.074258 from 72
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_0_4_5: RMS 0.038138 from 72
+processCcd.charImage.measureApCorr INFO: Aperture correction for modelfit_CModel: RMS 0.042169 from 73
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_1_kron: RMS 0.031229 from 74
+processCcd.charImage.measureApCorr INFO: Aperture correction for ext_convolved_ConvolvedFlux_3_6_0: RMS 0.044293 from 75
+processCcd.charImage.applyApCorr INFO: Applying aperture corrections to 23 flux fields
+processCcd.calibrate INFO: Processing {'visit': 40984, 'ccd': 55, 'field': 'SSP_UDEEP_SXDS', 'dateObs': '2015-10-10', 'pointing': 1378, 'filter': 'HSC-R', 'taiObs': '2015-10-10', 'expTime': 300.0}
+processCcd.calibrate.detection INFO: Detected 3870 positive sources to 5 sigma.
+processCcd.calibrate.detection INFO: Resubtracting the background after object detection
+processCcd.calibrate.deblend INFO: Deblending 3870 sources
+processCcd.calibrate.deblend INFO: Deblended: of 3870 sources, 520 were deblended, creating 1517 children, total 5387 sources
+processCcd.calibrate.measurement INFO: Measuring 5387 sources (3870 parents, 1517 children) 
+processCcd.calibrate.applyApCorr INFO: Applying aperture corrections to 3 flux fields
+processCcd.calibrate INFO: Copying flags from icSourceCat to sourceCat for 321 sources
+processCcd.calibrate.astromRefObjLoader INFO: Loading reference objects using center Fk5Coord(35.0482126, -4.7531166, 2000.00) and radius 0.12605960943715297 deg
+processCcd.calibrate.astromRefObjLoader INFO: Loaded 1879 reference objects
+processCcd.calibrate.astrometry.matcher INFO: filterStars purged 0 reference stars, leaving 1879 stars
+processCcd.calibrate.astrometry.matcher INFO: Purged 4933 unusable sources, leaving 454 usable sources
+processCcd.calibrate.astrometry.matcher INFO: Matched 400 sources
+processCcd.calibrate.astrometry.matcher INFO: filterStars purged 0 reference stars, leaving 1879 stars
+processCcd.calibrate.astrometry.matcher INFO: Purged 4933 unusable sources, leaving 454 usable sources
+processCcd.calibrate.astrometry.matcher INFO: Matched 353 sources
+processCcd.calibrate.astrometry.matcher INFO: filterStars purged 0 reference stars, leaving 1879 stars
+processCcd.calibrate.astrometry.matcher INFO: Purged 4933 unusable sources, leaving 454 usable sources
+processCcd.calibrate.astrometry.matcher INFO: Matched 329 sources
+processCcd.calibrate.astrometry INFO: Matched and fit WCS in 3 iterations; found 329 matches with scatter = 0.115 +- 0.069 arcsec
+processCcd.calibrate.photoRefObjLoader INFO: Loading reference objects using center Fk5Coord(35.0443422, -4.7585830, 2000.00) and radius 0.12506423117984952 deg
+processCcd.calibrate.photoRefObjLoader INFO: Loaded 1807 reference objects
+processCcd.calibrate.photoCal.matcher INFO: filterStars purged 0 reference stars, leaving 1807 stars
+processCcd.calibrate.photoCal.matcher INFO: Purged 4933 unusable sources, leaving 454 usable sources
+processCcd.calibrate.photoCal.matcher INFO: Matched 400 sources
+processCcd.calibrate.photoCal INFO: Found 400 matches with scatter = 0.146 +- 0.106 arcsec; 
+processCcd.calibrate.photoCal WARN: No 'photometric' flag key found in reference schema.
+processCcd.calibrate.photoCal INFO: Applying color terms for filterName='r', config.photoCatName=ps1_pv3_3pi_20170110 because config.applyColorTerms is True
+processCcd.calibrate.photoCal INFO: Magnitude zero point: 33.322299 +/- 0.000471 from 33 stars
+processCcd.calibrate INFO: Photometric zero-point: 33.322299
+/sps/lsst/software/lsst_distrib/w_2017_38/stack/miniconda3-4.3.21-10a4fa6/Linux64/meas_algorithms/13.0-23-gb99accf8+14/python/lsst/meas/algorithms/objectSizeStarSelector.py:399: RuntimeWarning: invalid value encountered in less
+  bad = numpy.logical_or(bad, width < self.config.widthMin)
+/sps/lsst/software/lsst_distrib/w_2017_38/stack/miniconda3-4.3.21-10a4fa6/Linux64/meas_algorithms/13.0-23-gb99accf8+14/python/lsst/meas/algorithms/objectSizeStarSelector.py:400: RuntimeWarning: invalid value encountered in greater
+  bad = numpy.logical_or(bad, width > self.config.widthMax)
+/sps/lsst/software/lsst_distrib/w_2017_38/stack/miniconda3-4.3.21-10a4fa6/Linux64/meas_algorithms/13.0-23-gb99accf8+14/python/lsst/meas/algorithms/objectSizeStarSelector.py:399: RuntimeWarning: invalid value encountered in less
+  bad = numpy.logical_or(bad, width < self.config.widthMin)
+/sps/lsst/software/lsst_distrib/w_2017_38/stack/miniconda3-4.3.21-10a4fa6/Linux64/meas_algorithms/13.0-23-gb99accf8+14/python/lsst/meas/algorithms/objectSizeStarSelector.py:400: RuntimeWarning: invalid value encountered in greater
+  bad = numpy.logical_or(bad, width > self.config.widthMax)
+/sps/lsst/software/lsst_distrib/w_2017_38/stack/miniconda3-4.3.21-10a4fa6/Linux64/meas_algorithms/13.0-23-gb99accf8+14/python/lsst/meas/algorithms/measureApCorr.py:237: RuntimeWarning: invalid value encountered in greater
+  fluxes > 0.0,
