@@ -1,0 +1,5 @@
+numpy
+matplolib
+astropy
+scipy
+pyyaml
